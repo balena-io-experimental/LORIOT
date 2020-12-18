@@ -1,0 +1,9 @@
+FROM balenalib/%%BALENA_MACHINE_NAME%%-node
+
+RUN apt-get -y update
+RUN apt-get install -y ca-certificates libftdi1
+RUN cd /tmp
+RUN wget https://uk1.loriot.io/home/gwsw/loriot-pi-3-sx1301_ref-SPI-0-latest.sh -O loriot-install.sh
+RUN chmod +x loriot-install.sh
+
+CMD ./loriot-install.sh -f -s uk1.loriot.io
