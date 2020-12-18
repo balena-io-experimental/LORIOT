@@ -1,9 +1,12 @@
 FROM balenalib/%%BALENA_MACHINE_NAME%%-node
 
-RUN apt-get -y update
-RUN apt-get install -y ca-certificates libftdi1
+RUN apt-get -y update && apt-get -y upgrade
+RUN apt-get install -y ca-certificates libftdi1 wget multiarch-support
+RUN wget http://security.debian.org/debian-security/pool/updates/main/o/openssl/libssl1.0.0_1.0.1t-1+deb8u12_armhf.deb
+RUN dpkg -i libssl1.0.0_1.0.1t-1+deb8u12_armhf.deb
 RUN cd /tmp
-RUN wget https://uk1.loriot.io/home/gwsw/loriot-pi-3-sx1301_ref-SPI-0-latest.sh -O loriot-install.sh
-RUN chmod +x loriot-install.sh
+RUN wget https://uk1.loriot.io/home/gwsw/loriot-pi-3-sx1301_ref-SPI-0-latest.bin -O loriot-gw
+RUN chmod +x loriot-gw
 
-CMD ./loriot-install.sh -f -s uk1.loriot.io
+CMD ./loriot-gw -f -s uk1.loriot.io
+
