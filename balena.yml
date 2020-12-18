@@ -1,0 +1,19 @@
+version: "2"
+slug: "loriot"
+name: "LORIOT"
+type: "sw.application"
+assets:
+  - url: "https://github.com/shawaj/LORIOT"
+    name: "repository"
+  - url: "https://raw.githubusercontent.com/shawaj/LORIOT/main/logo.png"
+    name: "logo"
+data:
+  description: "Deploys a TTN LoRaWAN gateway with LORIOT. It runs on a Raspberry Pi or Fin with a SX1301 based SPI concentrator."
+  defaultDeviceType: "fincm3"
+  supportedDeviceTypes:
+    - "raspberry-pi"
+    - "raspberry-pi2"
+    - "raspberrypi3"    
+    - "raspberrypi3-64"
+    - "raspberrypi4-64"
+    - "fincm3"
