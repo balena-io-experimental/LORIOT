@@ -1,15 +1,15 @@
 # LORIOT and balenaCloud
 
-Deploy a LoRaWAN gateway on your Raspberry Pi with LORIOT and manage it via balenaCloud. 
+Deploy a LoRaWAN gateway on your Raspberry Pi with [LORIOT](https://www.loriot.io) and manage it via [balenaCloud](https://www.balena.io). 
 
-LORIOT is an alternative to other LoRa Network Servers and offers a range of plans ranging from the free community plans all the way up to private network servers.
+LORIOT is an alternative to other LoRa Network Servers and offers a variety of plans ranging from the free community plan all the way up to private network servers.
 
 ## How to get started?
 
 In order to get started you you will need to purchase some hardware, download some software and sign up for a few accounts...
 
 **Prerequisites**
-- Purchase a [Raspberry Pi](https://www.raspberrypi.org/products/) or [balenaFin](https://www.balena.io/fin/) and the associate power supplies and accessories you might need (SD card, USB to mPCIe adapter etc)
+- Purchase a [Raspberry Pi](https://www.raspberrypi.org/products/) or [balenaFin](https://www.balena.io/fin/) and the associated power supplies and accessories you might need (SD card, USB to mPCIe adapter etc)
 - Purchase a LoRa gateway concentrator (we recommend the [IoT LoRa Gateway HAT from Pi Supply](https://uk.pi-supply.com) or the [RAK2245 from RAKwireless](https://store.rakwireless.com/) if using a standard Raspberry Pi or the RAK2247 mPCIe USB version if using the [balenaFin](https://www.balena.io/fin/))
 - Sign up for a [balenaCloud account here](https://dashboard.balena-cloud.com/signup)
 - Sign up for a [LORIOT Community account here](https://www.loriot.io/community-server.html) making sure to choose the closest server to your location for best performance
